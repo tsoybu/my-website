@@ -108,9 +108,7 @@ body {
 
 /* Hero Section */
 .hero {
-  /* Base64 image embedded directly */
-  background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...LONG_STRING...') 
-              no-repeat center center/cover;
+  background: url('classroom.jpg') no-repeat center center/cover;
   min-height: 500px;
   display: flex;
   align-items: center;
@@ -125,36 +123,11 @@ body {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 119, 182, 0.6); /* blue overlay for readability */
+  background: rgba(0, 119, 182, 0.6); /* overlay for readability */
 }
 
 .hero-text {
   position: relative;
   z-index: 1;
   max-width: 700px;
-}
-
-.hero h2 {
-  font-size: 2.8rem;
-  margin-bottom: 15px;
-  font-weight: 700;
-}
-
-.hero p {
-  font-size: 1.3rem;
-  margin-bottom: 25px;
-}
-
-.btn {
-  background: #ffd166;
-  color: #333;
-  padding: 12px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #ffb703;
 }
