@@ -166,3 +166,28 @@ header {
   background: #ffb703;   /* deeper yellow on hover */
   color: #000;
 }
+
+/* About Us Section */
+.about {
+  background: #f9f9f9;          /* soft neutral background */
+  padding: 80px 60px;           /* generous spacing */
+  text-align: center;           /* center-align text */
+}
+
+.about h2 {
+  font-size: 48px;              /* large headline */
+  font-weight: 800;
+  color: #333;                  /* dark for contrast */
+  margin-bottom: 40px;
+  letter-spacing: 2px;          /* adds spacing for impact */
+  text-transform: uppercase;    /* makes it bold and strong */
+}
+
+.about p {
+  font-size: 22px;              /* larger body text */
+  line-height: 1.8;             /* more breathing room */
+  color: #555;                  /* softer dark tone */
+  max-width: 1200px;            /* keeps text readable */
+  margin: 0 auto;               /* centers text block */
+}
+
