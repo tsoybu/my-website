@@ -167,14 +167,14 @@ header {
   color: #000;
 }
 
-/* Booking Section */
-#booking {
+/* Contact Information Section */
+.contact-info {
   background: #f9f9f9;
   padding: 80px 40px;
   text-align: center;
 }
 
-#booking h2 {
+.contact-info h2 {
   font-size: 42px;
   margin-bottom: 30px;
   color: #333;
@@ -183,16 +183,15 @@ header {
   letter-spacing: 2px;
 }
 
-#booking form {
-  max-width: 600px;
+.contact-info form {
+  max-width: 500px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-#booking input,
-#booking textarea {
+.contact-info input {
   padding: 14px;
   font-size: 18px;
   border: 1px solid #ccc;
@@ -200,7 +199,7 @@ header {
   width: 100%;
 }
 
-#booking button {
+.contact-info button {
   background: #ffd166;
   color: #333;
   padding: 14px 30px;
@@ -212,7 +211,7 @@ header {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-#booking button:hover {
+.contact-info button:hover {
   background: #ffb703;
   color: #000;
 }
