@@ -1,47 +1,31 @@
-/* style.css */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.section {
+  padding: 60px 40px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  line-height: 1.6;
-}
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #ffffff;
-  padding: 15px 40px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.logo h1 {
-  font-size: 1.6rem;
-  font-weight: 700;
+.section h2 {
   color: #0077b6;
-  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 25px;
+.section p, .section ul {
+  font-size: 1rem;
+  color: #555;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.3s ease;
+.section ul {
+  list-style: disc;
+  padding-left: 20px;
 }
 
-.navbar a:hover {
-  color: #0077b6;
+.highlight {
+  background: #f9f9f9;
+  border-left: 5px solid #0077b6;
+}
+
+.bonus {
+  background: #eaf4f9;
+  text-align: center;
+  border-radius: 8px;
 }
