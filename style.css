@@ -116,7 +116,7 @@ header {
 
 /* Hero Section */
 .hero {
-  padding-top: 100px;   /* space for header */
+  padding-top: 40px;   /* reduced space for header */
   background: url('https://i.imgur.com/gMG03Nh.png') no-repeat center center;
   background-size: cover;   /* fills neatly */
   background-color: #fff;   /* removes blue tint */
@@ -124,7 +124,7 @@ header {
   display: flex;
   flex-direction: column;   /* stack text + button */
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* move content higher */
   text-align: center;
   color: #fff;              /* text in white */
   position: relative;
@@ -135,19 +135,19 @@ header {
 }
 
 .hero h2 {
-  margin-bottom: 25px;   /* adds space below text */
-  font-size: 40px;       /* enlarged headline */
+  margin-bottom: 25px;
+  font-size: 40px;
   font-weight: bold;
 }
 
 .hero p {
-  margin-bottom: 25px;   /* adds space below text */
-  font-size: 22px;       /* enlarged tagline */
+  margin-bottom: 25px;
+  font-size: 22px;
 }
 
 /* Hero Button */
 .hero .btn {
-  background: #ffd166;   /* yellow fill */
+  background: #ffd166;
   color: #333;
   padding: 14px 30px;
   border-radius: 6px;
@@ -155,11 +155,12 @@ header {
   font-weight: bold;
   border: 2px solid #ffd166;
   transition: background 0.3s ease, color 0.3s ease;
-  margin-top: 50px;      /* pushes button further down */
-  font-size: 20px;       /* enlarged button text */
+  margin-top: 30px;      /* less gap so button stays closer */
+  font-size: 20px;
 }
 
 .hero .btn:hover {
-  background: #ffb703;   /* deeper yellow on hover */
+  background: #ffb703;
   color: #000;
 }
+
