@@ -108,7 +108,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url('https://i.imgur.com/gMG03Nh.png') 
+  background: url('https://copilot.microsoft.com/th/id/BCO.73716be4-d35c-48ed-8b9b-56a1596bb019.png') 
               no-repeat center center/cover;
   min-height: 500px;
   display: flex;
@@ -133,27 +133,3 @@ body {
   max-width: 700px;
 }
 
-.hero h2 {
-  font-size: 2.8rem;
-  margin-bottom: 15px;
-  font-weight: 700;
-}
-
-.hero p {
-  font-size: 1.3rem;
-  margin-bottom: 25px;
-}
-
-.btn {
-  background: #ffd166;
-  color: #333;
-  padding: 12px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #ffb703;
-}
