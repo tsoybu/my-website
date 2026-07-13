@@ -1,78 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Awesome Website</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .container {
-            text-align: center;
-            background: white;
-            padding: 50px;
-            border-radius: 10px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        p {
-            color: #666;
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-        button {
-            background: #667eea;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-        button:hover {
-            background: #764ba2;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Booking Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    label {
+      text-align: left;
+      font-weight: bold;
+      color: #333;
+    }
+    input, textarea, select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    button {
+      background: #667eea;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #764ba2;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🚀 Welcome to My Website!</h1>
-        <p>This website is now live globally on the internet!</p>
-        <button onclick="alert('Hello from the internet! 🌍')">Click Me</button>
-    </div>
+  <div class="container">
+    <h1>📚 Book a Session with Your Teacher</h1>
+    <p>Welcome! Please fill out the form below to schedule your learning session.</p>
+    
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="subject">Subject:</label>
+      <select id="subject" name="subject" required>
+        <option value="">-- Select a Subject --</option>
+        <option value="Math">Math</option>
+        <option value="Science">Science</option>
+        <option value="English">English</option>
+        <option value="History">History</option>
+      </select>
+      
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
+      
+      <label for="time">Preferred Time:</label>
+      <input type="time" id="time" name="time" required>
+      
+      <label for="message">Additional Notes:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+      
+      <button type="submit">Book Session</button>
+    </form>
+  </div>
 </body>
 </html>
-
-# Navigate to your website folder
-cd my-website
-
-# Initialize git
-git init
-
-# Add all files
-git add .
-
-# Create first commit
-git commit -m "Initial commit: My awesome website"
-
-# Add remote repository (replace USERNAME with your GitHub username)
-git branch -M main
-git remote add origin https://github.com/USERNAME/my-website.git
-
-# Push to GitHub
-git push -u origin main
