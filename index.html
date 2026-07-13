@@ -1,13 +1,72 @@
-<!-- Modern Header -->
-<header class="site-header">
-  <div class="logo">
-    <h1>Nella's Online Teaching</h1>
-  </div>
-  <nav class="navbar">
-    <ul>
-      <li><a href="#book">Book</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ul>
-  </nav>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nella's Online Teaching</title>
+  <style>
+    /* Modern Header CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 15px 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .logo h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #0077b6;
+      letter-spacing: 1px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #0077b6;
+    }
+  </style>
+</head>
+<body>
+  <!-- Modern Header -->
+  <header class="site-header">
+    <div class="logo">
+      <h1>Nella's Online Teaching</h1>
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#book">Book</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+</html>
