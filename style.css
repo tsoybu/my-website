@@ -105,53 +105,31 @@ body {
   padding: 40px;
 }
 
+/* Header Section */
+header {
+  position: fixed;   /* keeps it locked at the top */
+  top: 0;            /* aligns it to the very top */
+  left: 0;
+  width: 100%;
+  z-index: 1000;     /* ensures it stays above other elements */
+}
 
-/* Hero Section */
+/* Add spacing so hero content isn’t hidden behind header */
 .hero {
-  background: url('https://i.imgur.com/gMG03Nh.png') no-repeat center center;
-  background-size: cover; /* fits the entire image without cropping */
+  margin-top: 80px;  /* adjust based on your header’s height */
+  background: url('https://i.imgur.com/swiuKPH.jpg') no-repeat center center;
+  background-size: contain; /* fits the whole image */
+  background-color: #fff;   /* removes blue tint */
   min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
-  position: relative;
-}
-
-/* Remove the blue overlay */
-.hero::after {
-  content: none;
-}
-
-.hero-text {
-  position: relative;
-  z-index: 1;
-  max-width: 700px;
-}
-
-.hero h2 {
-  font-size: 2.8rem;
-  margin-bottom: 15px;
-  font-weight: 700;
-}
-
-.hero p {
-  font-size: 1.3rem;
-  margin-bottom: 25px;
-}
-
-.btn {
-  background: #ffd166;
   color: #333;
-  padding: 12px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
+  position: relative;
 }
 
-.btn:hover {
-  background: #ffb703;
+.hero::after {
+  content: none; /* no overlay */
 }
 
