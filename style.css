@@ -117,7 +117,7 @@ header {
 /* Add spacing so hero content isn’t hidden behind header */
 .hero {
   margin-top: 80px;  /* adjust based on your header’s height */
-  background: url('https://i.imgur.com/swiuKPH.jpg') no-repeat center center;
+  background: url('https://i.imgur.com/gMG03Nh.png') no-repeat center center;
   background-size: contain; /* fits the whole image */
   background-color: #fff;   /* removes blue tint */
   min-height: 500px;
