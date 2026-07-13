@@ -6,113 +6,79 @@
   <title>Teacher Nella – Online English Tutor</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Poppins', Arial, sans-serif; background: #f9f9fb; color: #333; line-height: 1.6; }
+    body { font-family: 'Poppins', Arial, sans-serif; background: #f9f9fb; color: #333; }
 
-    /* Hero Section */
+    /* Header */
     header {
       background: linear-gradient(135deg, #ff7eb9 0%, #667eea 100%);
-      color: white; padding: 100px 20px; text-align: center;
+      color: white; padding: 40px 20px; text-align: center;
     }
-    header h1 { font-size: 3em; margin-bottom: 10px; text-shadow: 2px 2px 5px rgba(0,0,0,0.4); }
-    header p { font-size: 1.3em; margin-bottom: 20px; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
+    header h1 { font-size: 2.5em; margin-bottom: 10px; }
+    header p { font-size: 1.2em; }
 
-    /* Sections */
-    section { padding: 60px 20px; text-align: center; }
-    section h2 { margin-bottom: 20px; font-size: 2em; color: #667eea; }
+    /* Tutor Card Grid */
+    .container { max-width: 1200px; margin: 40px auto; padding: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 
-    /* Highlights Section */
-    #highlights { background: #ffe5d4; }
-    #highlights .gallery { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-    #highlights .item {
-      background: white; padding: 20px; border-radius: 50%; width: 160px; height: 160px;
-      display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      font-weight: bold; color: #764ba2;
+    .card {
+      background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: hidden; transition: transform 0.3s;
     }
-
-    /* Activities Section */
-    #activities { background: #d4e5ff; }
-    #activities .gallery { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
-    #activities .item {
-      background: white; padding: 20px; border-radius: 50%; width: 160px; height: 160px;
-      display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      font-weight: bold; color: #667eea;
+    .card:hover { transform: translateY(-5px); }
+    .card img { width: 100%; height: 200px; object-fit: cover; }
+    .card-body { padding: 20px; text-align: center; }
+    .card-body h3 { margin-bottom: 10px; color: #667eea; }
+    .card-body p { font-size: 0.95em; margin-bottom: 15px; }
+    .card-body button {
+      background: #667eea; color: white; border: none; padding: 10px 20px;
+      border-radius: 5px; cursor: pointer; transition: 0.3s;
     }
-
-    /* Booking Section */
-    #booking { background: #fff; }
-    form { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
-    input, textarea, select {
-      padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 15px;
-    }
-    button {
-      background: #667eea; color: white; border: none; padding: 14px;
-      font-size: 16px; border-radius: 5px; cursor: pointer; transition: 0.3s;
-    }
-    button:hover { background: #764ba2; }
-
-    /* Contact Section */
-    #contact { background: #d4ffd4; }
-    #contact p { margin: 10px 0; font-size: 1.1em; }
+    .card-body button:hover { background: #764ba2; }
 
     /* Footer */
-    footer { background: #333; color: white; text-align: center; padding: 20px; }
+    footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; }
   </style>
 </head>
 <body>
-  <!-- Hero -->
   <header>
     <h1>👩‍🏫 Teacher Nella</h1>
     <p>Online English Tutor – Grammar, Writing, and Conversation</p>
-    <nav>
-      <a href="#highlights">Highlights</a>
-      <a href="#activities">Activities</a>
-      <a href="#booking">Booking</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
 
-  <!-- Highlights -->
-  <section id="highlights">
-    <h2>🌟 English Learning Highlights</h2>
-    <p>Celebrate student achievements and lesson milestones.</p>
-    <div class="gallery">
-      <div class="item">📖 Vocabulary Mastery</div>
-      <div class="item">📝 Essay Writing</div>
-      <div class="item">💬 Conversation Practice</div>
+  <div class="container">
+    <div class="grid">
+      <!-- Tutor Card Example -->
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Lesson Image">
+        <div class="card-body">
+          <h3>Grammar Lessons</h3>
+          <p>Master sentence structure, tenses, and rules with interactive lessons.</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Lesson Image">
+        <div class="card-body">
+          <h3>Writing Skills</h3>
+          <p>Improve essays, reports, and creative writing with guided practice.</p>
+          <button>Book Now</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/400x200" alt="Lesson Image">
+        <div class="card-body">
+          <h3>Conversation Practice</h3>
+          <p>Boost confidence in speaking English through real‑time sessions.</p>
+          <button>Book Now</button>
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
 
-  <!-- Activities -->
-  <section id="activities">
-    <h2>💻 Online Class Activities</h2>
-    <p>Interactive lessons and student participation.</p>
-    <div class="gallery">
-      <div class="item">📚 Group Reading</div>
-      <div class="item">🎤 Speaking Practice</div>
-      <div class="item">✍️ Grammar Workshop</div>
-    </div>
-  </section>
-
-  <!-- Booking -->
-  <section id="booking">
-    <h2>📅 Book a Session</h2>
-    <form action="https://formspree.io/f/yourFormID" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <select name="subject" required>
-        <option value="">-- Select Focus Area --</option>
-        <option value="Grammar">Grammar</option>
-        <option value="Writing">Writing</option>
-        <option value="Literature">Literature</option>
-        <option value="Conversation">Conversation</option>
-      </select>
-      <input type="date" name="date" required>
-      <input type="time" name="time" required>
-      <textarea name="message" rows="4" placeholder="Additional Notes"></textarea>
-      <button type="submit">Book Session</button>
-    </form>
-  </section>
-
-  <!-- Contact -->
+  <footer>
+    <p>&copy; 2026 Teacher Nella. All rights reserved.</p>
+  </footer>
+</body>
+</html>
