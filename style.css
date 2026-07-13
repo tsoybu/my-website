@@ -167,27 +167,54 @@ header {
   color: #000;
 }
 
-/* About Us Section */
-.about {
-  background: #f9f9f9;          /* soft neutral background */
-  padding: 80px 60px;           /* generous spacing */
-  text-align: center;           /* center-align text */
+/* Booking Section */
+.booking {
+  background: #f9f9f9;
+  padding: 80px 40px;
+  text-align: center;
 }
 
-.about h2 {
-  font-size: 48px;              /* large headline */
+.booking h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #333;
   font-weight: 800;
-  color: #333;                  /* dark for contrast */
-  margin-bottom: 40px;
-  letter-spacing: 2px;          /* adds spacing for impact */
-  text-transform: uppercase;    /* makes it bold and strong */
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.about p {
-  font-size: 22px;              /* larger body text */
-  line-height: 1.8;             /* more breathing room */
-  color: #555;                  /* softer dark tone */
-  max-width: 1200px;            /* keeps text readable */
-  margin: 0 auto;               /* centers text block */
+.booking form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
+
+.booking input,
+.booking textarea {
+  padding: 14px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.booking button {
+  background: #ffd166;
+  color: #333;
+  padding: 14px 30px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid #ffd166;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.booking button:hover {
+  background: #ffb703;
+  color: #000;
+}
+
 
