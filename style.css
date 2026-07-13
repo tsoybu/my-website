@@ -114,9 +114,10 @@ header {
   z-index: 1000;     /* ensures it stays above other elements */
 }
 
+
 /* Hero Section */
 .hero {
-  padding-top: 40px;   /* reduced space for header */
+  padding-top: 100px;   /* space for header */
   background: url('https://i.imgur.com/gMG03Nh.png') no-repeat center center;
   background-size: cover;   /* fills neatly */
   background-color: #fff;   /* removes blue tint */
@@ -124,9 +125,9 @@ header {
   display: flex;
   flex-direction: column;   /* stack text + button */
   align-items: center;
-  justify-content: flex-start; /* move content higher */
+  justify-content: center;
   text-align: center;
-  color: #fff;              /* base text color */
+  color: #fff;              /* text in white */
   position: relative;
 }
 
@@ -138,15 +139,13 @@ header {
   margin-bottom: 25px;
   font-size: 40px;       /* enlarged headline */
   font-weight: bold;
-  color: #fff;           /* keep white text */
-  -webkit-text-stroke: 1px black; /* black outline */
+  color: #fff;           /* plain white text */
 }
 
 .hero p {
   margin-bottom: 25px;
   font-size: 22px;       /* enlarged tagline */
-  color: #fff;           /* keep white text */
-  -webkit-text-stroke: 0.5px black; /* thinner outline */
+  color: #fff;           /* plain white text */
 }
 
 /* Hero Button */
@@ -159,11 +158,11 @@ header {
   font-weight: bold;
   border: 2px solid #ffd166;
   transition: background 0.3s ease, color 0.3s ease;
-  margin-top: 30px;      /* keeps button closer */
+  margin-top: 50px;      /* pushes button further down */
   font-size: 20px;       /* enlarged button text */
-  -webkit-text-stroke: 0.5px black; /* optional outline for button text */
 }
 
 .hero .btn:hover {
   background: #ffb703;   /* deeper yellow on hover */
   color: #000;
+}
