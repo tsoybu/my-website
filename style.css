@@ -114,52 +114,41 @@ header {
   z-index: 1000;     /* ensures it stays above other elements */
 }
 
-/* Add spacing so hero content isn’t hidden behind header */
+/* Hero Section */
 .hero {
-  margin-top: 80px;  /* adjust based on your header’s height */
+  margin-top: 80px;  /* keeps space for header */
   background: url('https://i.imgur.com/gMG03Nh.png') no-repeat center center;
-  background-size: contain; /* fits the whole image */
-  background-color: #fff;   /* removes blue tint */
+  background-size: cover;   /* fills the section neatly */
+  background-color: #fff;   /* no blue tint */
   min-height: 500px;
   display: flex;
+  flex-direction: column;   /* stack text + button */
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #333;
   position: relative;
+  padding: 40px 20px;
 }
 
 .hero::after {
-  content: none; /* no overlay */
+  content: none; /* removes overlay */
 }
 
-/* About Us Section */
-#about-us {
-  background: linear-gradient(135deg, #fdfdfd, #eef6ff);
-  border-radius: 12px;
-  padding: 60px 40px;
-  max-width: 1000px;
-  margin: 60px auto;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Hero Button */
+.hero .btn {
+  background: #ffd166;   /* yellow fill */
+  color: #333;
+  padding: 14px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #ffd166;
+  transition: background 0.3s ease, color 0.3s ease;
+  margin-top: 20px;
 }
 
-#about-us:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
-}
-
-#about-us h2 {
-  color: #0077b6;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  border-bottom: 3px solid #ffd166;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-#about-us p {
-  font-size: 1.1rem;
-  color: #444;
-  line-height: 1.7;
+.hero .btn:hover {
+  background: #ffb703;   /* deeper yellow on hover */
+  color: #000;
 }
