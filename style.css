@@ -1,3 +1,54 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #333;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0077b6;
+  padding: 15px 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffd166;
+}
+
+/* Sections */
 .section {
   padding: 60px 40px;
   max-width: 1000px;
@@ -7,6 +58,7 @@
 .section h2 {
   color: #0077b6;
   margin-bottom: 20px;
+  font-size: 1.8rem;
 }
 
 .section p, .section ul {
@@ -19,13 +71,36 @@
   padding-left: 20px;
 }
 
+/* Highlight Section */
 .highlight {
   background: #f9f9f9;
   border-left: 5px solid #0077b6;
+  border-radius: 8px;
+  padding: 40px;
 }
 
+/* Referral Bonus */
 .bonus {
-  background: #eaf4f9;
+  background: linear-gradient(135deg, #eaf4f9, #d9f0ff);
   text-align: center;
+  border-radius: 12px;
+  padding: 50px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.bonus h2 {
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+
+.bonus p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Contact Section */
+#contact {
+  background: #f1f1f1;
   border-radius: 8px;
+  padding: 40px;
 }
