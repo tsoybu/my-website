@@ -113,24 +113,30 @@ header {
   width: 100%;
   z-index: 1000;     /* ensures it stays above other elements */
 }
+
 /* Hero Section */
 .hero {
   padding-top: 100px;   /* space for header */
   background: url('https://i.imgur.com/gMG03Nh.png') no-repeat center center;
   background-size: cover;   /* fills neatly */
-  background-color: #fff;   /* no blue tint */
+  background-color: #fff;   /* removes blue tint */
   min-height: 500px;
   display: flex;
   flex-direction: column;   /* stack text + button */
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;              /* make text white */
+  color: #fff;              /* text in white */
   position: relative;
 }
 
 .hero::after {
-  content: none; /* removes overlay completely */
+  content: none; /* removes overlay */
+}
+
+.hero h2,
+.hero p {
+  margin-bottom: 25px;   /* adds space below text */
 }
 
 /* Hero Button */
@@ -143,10 +149,9 @@ header {
   font-weight: bold;
   border: 2px solid #ffd166;
   transition: background 0.3s ease, color 0.3s ease;
-  margin-top: 40px;
+  margin-top: 50px;      /* pushes button further down */
 }
 
 .hero .btn:hover {
   background: #ffb703;   /* deeper yellow on hover */
   color: #000;
-}
