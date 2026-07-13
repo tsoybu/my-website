@@ -108,7 +108,8 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url('classroom.jpg') no-repeat center center/cover;
+  background: url('https://imgur.com/a/swiuKPH') 
+              no-repeat center center/cover;
   min-height: 500px;
   display: flex;
   align-items: center;
@@ -130,4 +131,29 @@ body {
   position: relative;
   z-index: 1;
   max-width: 700px;
+}
+
+.hero h2 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  background: #ffd166;
+  color: #333;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ffb703;
 }
