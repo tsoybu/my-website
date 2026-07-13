@@ -113,11 +113,11 @@ header {
   width: 100%;
   z-index: 1000;     /* ensures it stays above other elements */
 }
-
 /* Hero Section */
 .hero {
+  padding-top: 100px;   /* space for header */
   background: url('https://i.imgur.com/gMG03Nh.png') no-repeat center center;
-  background-size: cover;   /* fills the section neatly */
+  background-size: cover;   /* fills neatly */
   background-color: #fff;   /* no blue tint */
   min-height: 500px;
   display: flex;
@@ -125,13 +125,12 @@ header {
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #333;
+  color: #fff;              /* make text white */
   position: relative;
-  padding: 40px 20px;
 }
 
 .hero::after {
-  content: none; /* removes overlay */
+  content: none; /* removes overlay completely */
 }
 
 /* Hero Button */
