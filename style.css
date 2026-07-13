@@ -108,8 +108,10 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url('school-background.jpg') no-repeat center center/cover;
-  min-height: 400px;
+  /* Base64 image embedded directly */
+  background: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...LONG_STRING...') 
+              no-repeat center center/cover;
+  min-height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,23 +125,24 @@ body {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 119, 182, 0.6); /* blue overlay */
+  background: rgba(0, 119, 182, 0.6); /* blue overlay for readability */
 }
 
 .hero-text {
   position: relative;
   z-index: 1;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .hero h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
+  font-size: 1.3rem;
+  margin-bottom: 25px;
 }
 
 .btn {
