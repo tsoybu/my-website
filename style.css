@@ -134,9 +134,15 @@ header {
   content: none; /* removes overlay */
 }
 
-.hero h2,
+.hero h2 {
+  margin-bottom: 25px;   /* adds space below text */
+  font-size: 40px;       /* enlarged headline */
+  font-weight: bold;
+}
+
 .hero p {
   margin-bottom: 25px;   /* adds space below text */
+  font-size: 22px;       /* enlarged tagline */
 }
 
 /* Hero Button */
@@ -150,8 +156,10 @@ header {
   border: 2px solid #ffd166;
   transition: background 0.3s ease, color 0.3s ease;
   margin-top: 50px;      /* pushes button further down */
+  font-size: 20px;       /* enlarged button text */
 }
 
 .hero .btn:hover {
   background: #ffb703;   /* deeper yellow on hover */
   color: #000;
+}
