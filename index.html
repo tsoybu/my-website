@@ -3,46 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teacher Angelo – English Tutor</title>
+  <title>Teacher Nella – Online English Tutor</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Segoe UI', Arial, sans-serif; background: #f9f9fb; color: #333; line-height: 1.6; }
+
     header {
-      background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
-      color: white; padding: 80px 20px; text-align: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 60px 20px; text-align: center;
     }
-    header h1 { font-size: 3em; margin-bottom: 10px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }
-    header p { font-size: 1.3em; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
-    nav { margin-top: 20px; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    .container { max-width: 1100px; margin: 40px auto; padding: 20px; }
-    section { margin-bottom: 60px; }
-    section h2 { margin-bottom: 20px; color: #667eea; font-size: 2em; }
-    .profile { display: flex; gap: 30px; align-items: center; }
-    .profile img {
-      width: 220px; height: 220px; border-radius: 50%; object-fit: cover;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    header h1 { font-size: 3em; margin-bottom: 10px; }
+    header p { font-size: 1.3em; }
+
+    section { padding: 50px 20px; text-align: center; }
+    section h2 { margin-bottom: 20px; font-size: 2em; }
+
+    /* Highlights Section */
+    #highlights { background: #ffe5d4; }
+    #highlights .gallery { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    #highlights .item {
+      background: white; padding: 20px; border-radius: 50%; width: 150px; height: 150px;
+      display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
-    .classes { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-    .class-card {
-      background: white; padding: 20px; border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center;
+
+    /* Activities Section */
+    #activities { background: #d4e5ff; }
+    #activities .gallery { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    #activities .item {
+      background: white; padding: 20px; border-radius: 50%; width: 150px; height: 150px;
+      display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
-    .class-card h3 { margin-bottom: 10px; color: #764ba2; }
-    .testimonials blockquote {
-      background: #fff; padding: 20px; border-left: 5px solid #667eea;
-      margin-bottom: 20px; border-radius: 5px; font-style: italic;
-    }
-    form { display: flex; flex-direction: column; gap: 15px; }
-    input, textarea, select {
-      padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 15px;
-    }
-    button {
-      background: #667eea; color: white; border: none; padding: 14px;
-      font-size: 16px; border-radius: 5px; cursor: pointer; transition: 0.3s;
-    }
-    button:hover { background: #764ba2; }
+
+    /* Contact Section */
+    #contact { background: #d4ffd4; }
+    #contact p { margin: 10px 0; font-size: 1.1em; }
+
     footer {
       background: #333; color: white; text-align: center; padding: 20px;
     }
@@ -51,64 +46,37 @@
 <body>
   <header>
     <h1>👩‍🏫 Teacher Angelo</h1>
-    <p>English Tutor – Helping students master grammar, writing, and literature</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#classes">Classes</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#booking">Booking</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>Online English Tutor – Grammar, Writing, and Conversation</p>
   </header>
 
-  <div class="container">
-    <section id="about" class="profile">
-      <img src="https://via.placeholder.com/220" alt="Teacher Angelo">
-      <div>
-        <h2>About Me</h2>
-        <p>I am an experienced English tutor dedicated to helping students improve grammar, writing, and literature skills. My lessons are interactive, supportive, and tailored to each student’s needs.</p>
-      </div>
-    </section>
+  <section id="highlights">
+    <h2>🌟 English Learning Highlights</h2>
+    <p>Celebrate student achievements and lesson milestones.</p>
+    <div class="gallery">
+      <div class="item">📖 Vocabulary Mastery</div>
+      <div class="item">📝 Essay Writing</div>
+      <div class="item">💬 Conversation Practice</div>
+    </div>
+  </section>
 
-    <section id="classes">
-      <h2>Classes Offered</h2>
-      <div class="classes">
-        <div class="class-card"><h3>Grammar</h3><p>Master sentence structure and rules.</p></div>
-        <div class="class-card"><h3>Writing</h3><p>Improve essays, reports, and creative writing.</p></div>
-        <div class="class-card"><h3>Literature</h3><p>Analyze texts and deepen comprehension.</p></div>
-        <div class="class-card"><h3>Conversation</h3><p>Practice speaking English confidently.</p></div>
-      </div>
-    </section>
+  <section id="activities">
+    <h2>💻 Online Class Activities</h2>
+    <p>Interactive lessons and student participation.</p>
+    <div class="gallery">
+      <div class="item">📚 Group Reading</div>
+      <div class="item">🎤 Speaking Practice</div>
+      <div class="item">✍️ Grammar Workshop</div>
+    </div>
+  </section>
 
-    <section id="testimonials">
-      <h2>Testimonials</h2>
-      <blockquote>"Teacher Angelo helped me improve my essay writing skills and boosted my confidence in English class!" – Student A</blockquote>
-      <blockquote>"His lessons are engaging and easy to follow. Highly recommended!" – Student B</blockquote>
-    </section>
+  <section id="contact">
+    <h2>📩 Get in Touch!</h2>
+    <p>Email: teacherangelo@example.com</p>
+    <p>Phone: +63 912 345 6789</p>
+  </section>
 
-    <section id="booking">
-      <h2>Book a Session</h2>
-      <form action="https://formspree.io/f/yourFormID" method="POST">
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="subject">Focus Area:</label>
-        <select id="subject" name="subject" required>
-          <option value="">-- Select --</option>
-          <option value="Grammar">Grammar</option>
-          <option value="Literature">Literature</option>
-          <option value="Writing">Writing</option>
-          <option value="Conversation">Conversation</option>
-        </select>
-        
-        <label for="date">Preferred Date:</label>
-        <input type="date" id="date" name="date" required>
-        
-        <label for="time">Preferred Time:</label>
-        <input type="time" id="time" name="time" required>
-        
-        <label for="message">Additional Notes:</label>
-        <textarea id="message" name="message" rows="4">
+  <footer>
+    <p>&copy; 2026 Teacher Nella. All rights reserved.</p>
+  </footer>
+</body>
+</html>
