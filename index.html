@@ -3,26 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teacher Nella – Online English Tutor</title>
+  <title>Teacher Angelo – Online English Tutor</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Segoe UI', Arial, sans-serif; background: #f9f9fb; color: #333; line-height: 1.6; }
 
+    /* Hero Section */
     header {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white; padding: 60px 20px; text-align: center;
+      background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+      color: white; padding: 100px 20px; text-align: center;
     }
-    header h1 { font-size: 3em; margin-bottom: 10px; }
-    header p { font-size: 1.3em; }
+    header h1 { font-size: 3em; margin-bottom: 10px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5); }
+    header p { font-size: 1.3em; margin-bottom: 20px; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
 
-    section { padding: 50px 20px; text-align: center; }
-    section h2 { margin-bottom: 20px; font-size: 2em; }
+    /* Sections */
+    section { padding: 60px 20px; text-align: center; }
+    section h2 { margin-bottom: 20px; font-size: 2em; color: #667eea; }
 
     /* Highlights Section */
     #highlights { background: #ffe5d4; }
     #highlights .gallery { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
     #highlights .item {
-      background: white; padding: 20px; border-radius: 50%; width: 150px; height: 150px;
+      background: white; padding: 20px; border-radius: 50%; width: 160px; height: 160px;
       display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
 
@@ -30,25 +34,44 @@
     #activities { background: #d4e5ff; }
     #activities .gallery { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
     #activities .item {
-      background: white; padding: 20px; border-radius: 50%; width: 150px; height: 150px;
+      background: white; padding: 20px; border-radius: 50%; width: 160px; height: 160px;
       display: flex; align-items: center; justify-content: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     }
+
+    /* Booking Section */
+    #booking { background: #fff; }
+    form { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+    input, textarea, select {
+      padding: 12px; border: 1px solid #ccc; border-radius: 5px; font-size: 15px;
+    }
+    button {
+      background: #667eea; color: white; border: none; padding: 14px;
+      font-size: 16px; border-radius: 5px; cursor: pointer; transition: 0.3s;
+    }
+    button:hover { background: #764ba2; }
 
     /* Contact Section */
     #contact { background: #d4ffd4; }
     #contact p { margin: 10px 0; font-size: 1.1em; }
 
-    footer {
-      background: #333; color: white; text-align: center; padding: 20px;
-    }
+    /* Footer */
+    footer { background: #333; color: white; text-align: center; padding: 20px; }
   </style>
 </head>
 <body>
+  <!-- Hero -->
   <header>
     <h1>👩‍🏫 Teacher Angelo</h1>
     <p>Online English Tutor – Grammar, Writing, and Conversation</p>
+    <nav>
+      <a href="#highlights">Highlights</a>
+      <a href="#activities">Activities</a>
+      <a href="#booking">Booking</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
+  <!-- Highlights -->
   <section id="highlights">
     <h2>🌟 English Learning Highlights</h2>
     <p>Celebrate student achievements and lesson milestones.</p>
@@ -59,6 +82,7 @@
     </div>
   </section>
 
+  <!-- Activities -->
   <section id="activities">
     <h2>💻 Online Class Activities</h2>
     <p>Interactive lessons and student participation.</p>
@@ -69,14 +93,37 @@
     </div>
   </section>
 
+  <!-- Booking -->
+  <section id="booking">
+    <h2>📅 Book a Session</h2>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <select name="subject" required>
+        <option value="">-- Select Focus Area --</option>
+        <option value="Grammar">Grammar</option>
+        <option value="Writing">Writing</option>
+        <option value="Literature">Literature</option>
+        <option value="Conversation">Conversation</option>
+      </select>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+      <textarea name="message" rows="4" placeholder="Additional Notes"></textarea>
+      <button type="submit">Book Session</button>
+    </form>
+  </section>
+
+  <!-- Contact -->
   <section id="contact">
     <h2>📩 Get in Touch!</h2>
     <p>Email: teacherangelo@example.com</p>
     <p>Phone: +63 912 345 6789</p>
+    <p>Follow on social media for updates and resources.</p>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2026 Teacher Nella. All rights reserved.</p>
+    <p>&copy; 2026 Teacher Angelo. All rights reserved.</p>
   </footer>
 </body>
 </html>
