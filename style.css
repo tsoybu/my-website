@@ -116,7 +116,6 @@ header {
 
 /* Hero Section */
 .hero {
-  margin-top: 80px;
   background: url('https://i.imgur.com/gMG03Nh.png') no-repeat center center;
   background-size: cover;   /* fills the section neatly */
   background-color: #fff;   /* no blue tint */
